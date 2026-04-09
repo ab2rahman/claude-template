@@ -1,0 +1,81 @@
+# Credentials - NEVER commit these!
+.env
+.env.local
+.env.*.local
+.mcp.json
+settings.json
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Backups
+backups/
+*.backup
+*..backup.*
+
+# Debug logs
+debug/*.txt
+debug/latest
+
+# IDE locks
+ide/*.lock
+
+# Cache directories
+image-cache/
+shell-snapshots/
+file-history/
+paste-cache/
+tasks/
+
+# Session/project data
+*.jsonl
+projects/*/
+projects/*/*
+
+# Session data (sensitive!)
+sessions/
+session-env/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+*.log
+
+# Other lock files
+*.lock
+
+# Memory files (optional - comment out if you want to track them)
+memory/
+
+# Apps to exclude from git
+apps/prompt-library/
+apps/remote-control/
+
+# Servers (credentials!)
+servers/
+
+# Plugins market (external repos)
+plugins/marketplaces/
+
+# Claude Code internal
+cache/
+downloads/
+ide/
+sessions/
+stats-cache.json
+history.jsonl
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# OS specific
+Thumbs.db
+desktop.ini

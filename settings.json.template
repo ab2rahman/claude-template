@@ -1,0 +1,20 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "${CLAUDE_AUTH_TOKEN}",
+    "ANTHROPIC_BASE_URL": "${ANTHROPIC_BASE_URL}",
+    "API_TIMEOUT_MS": "${API_TIMEOUT_MS:-300000}",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1
+  },
+  "model": "opus[1m]",
+  "autoUpdatesChannel": "latest",
+  "permissions": {
+    "allow": [
+      "Read:*",
+      "Glob:*",
+      "Grep:*",
+      "mcp__filesystem-:list",
+      "mcp__filesystem-:read",
+      "mcp__filesystem-*:get_file_info"
+    ]
+  }
+}
