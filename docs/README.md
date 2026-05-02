@@ -1,45 +1,39 @@
 # Documentation
 
-This directory stores documentation for all projects.
+Documentation for the Claude Code Template System.
 
-## Structure
+## Reference Docs
 
-```
-docs/
-├── shared/                # Standards across all projects
-│   ├── coding-standards.md
-│   └── deployment-guide.md
-├── client-a/              # First client/company docs
-│   ├── workflow.md
-│   └── team-structure.md
-├── client-b/              # Second client/company docs
-│   └── workflow.md
-└── projects/              # Per-project detailed docs
-    ├── client-a/
-    │   ├── project-a/
-    │   │   ├── architecture.md
-    │   │   ├── api-endpoints.md
-    │   │   └── features.md
-    │   └── project-b/
-    │       └── architecture.md
-    └── client-b/
-        └── project-a/
-            └── requirements.md
-```
+| File | Description |
+|------|-------------|
+| [architecture.md](architecture.md) | Three-tier command system architecture |
+| [naming-conventions.md](naming-conventions.md) | File and content naming rules |
+| [file-structure.md](file-structure.md) | Complete directory layout and purposes |
+| [conversion-guide.md](conversion-guide.md) | How to set up and customize the template |
+| [project-structure.md](project-structure.md) | Recommended project directory organization |
 
-## Usage
+## Guides (main branch)
 
-**Rename to match your setup:**
-- `client-a`, `client-b` → Your actual client/company names
-- `project-a`, `project-b` → Your actual project names
+Stack-specific pattern guides are available on the `main` branch:
 
-**Always check documentation before exploring code.** Docs contain complete flows with examples.
+| Guide | Stack |
+|-------|-------|
+| flutter-patterns.md | Flutter/Dart |
+| kotlin-patterns.md | Kotlin/Android |
+| react-native-patterns.md | React Native |
+| ios-patterns.md | iOS/Swift |
+| node-patterns.md | Node.js |
+| nextjs-patterns.md | Next.js |
+| python-patterns.md | Python |
+| database-patterns.md | Database |
+| devops-workflows.md | DevOps |
+| design-to-code.md | Design/Figma |
+| seo-checklist.md | SEO |
+| security-checklist.md | Security |
 
-## File Types
+## Quick Start
 
-- `architecture.md` — System architecture, tech stack
-- `api-endpoints.md` — API documentation
-- `features.md` — Feature list and roadmap
-- `requirements.md` — Client requirements
-- `workflow.md` — Team workflows, processes
-- `deployment-guide.md` — How to deploy
+1. Read [architecture.md](architecture.md) to understand the system
+2. Read [conversion-guide.md](conversion-guide.md) to set up your project
+3. Use `./bin/claude-setup.sh list` to see available components
+4. Use `./bin/claude-setup.sh bundle [stack]` to install a stack

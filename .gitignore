@@ -21,20 +21,12 @@ backups/
 debug/*.txt
 debug/latest
 
-# IDE locks
-ide/*.lock
-
 # Cache directories
 image-cache/
 shell-snapshots/
 file-history/
 paste-cache/
 tasks/
-
-# Session/project data
-*.jsonl
-projects/*/
-projects/*/*
 
 # Session data (sensitive!)
 sessions/
@@ -46,21 +38,12 @@ __pycache__/
 .pytest_cache/
 *.log
 
-# Other lock files
+# Lock files
 *.lock
 
 # Memory files (optional - comment out if you want to track them)
 memory/
-
-# Apps to exclude from git
-apps/prompt-library/
-apps/remote-control/
-
-# Servers (credentials!)
-servers/
-
-# Plugins market (external repos)
-plugins/marketplaces/
+!memory/.gitkeep
 
 # Claude Code internal
 cache/
