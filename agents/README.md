@@ -66,7 +66,19 @@ Examples:
 
 | Agent | Specialty | Invoked By |
 |-------|-----------|------------|
-| (Add your agents here) | | |
+| flutter-dev-agent | Flutter/Dart, Riverpod, GoRouter | `/flutter:screen`, `/flutter:provider`, `/flutter:nav`, `/flutter:api`, `/flutter:form` |
+| kotlin-dev-agent | Kotlin, Jetpack Compose, Hilt | `/kotlin:screen`, `/kotlin:viewmodel`, `/kotlin:nav`, `/kotlin:api`, `/kotlin:room` |
+| react-native-dev-agent | React Native, TypeScript, Expo | `/react-native:screen`, `/react-native:component`, `/react-native:api`, `/react-native:nav`, `/react-native:state` |
+| ios-dev-agent | Swift, SwiftUI, CoreData | `/ios:screen`, `/ios:viewmodel`, `/ios:api`, `/ios:nav`, `/ios:coredata` |
+| node-dev-agent | Node.js, Express, TypeScript | `/node:route`, `/node:middleware`, `/node:model`, `/node:api-docs` |
+| nextjs-dev-agent | Next.js, React, App Router | `/nextjs:page`, `/nextjs:component`, `/nextjs:api`, `/nextjs:layout`, `/nextjs:state` |
+| python-dev-agent | Python, FastAPI, SQLAlchemy | `/python:route`, `/python:auth`, `/python:model` |
+| database-architect-agent | SQL, Schema Design, Migrations | `/database:schema`, `/database:migrate`, `/database:seed`, `/database:erd` |
+| devops-engineer-agent | Docker, CI/CD, Nginx, PM2 | `/devops:deploy`, `/devops:docker`, `/devops:ci`, `/devops:env`, `/devops:monitor` |
+| design-analyst-agent | Figma, Design Tokens, UI Specs | `/design:analyze`, `/design:figma`, `/design:implement`, `/design:theme` |
+| seo-auditor-agent | SEO, Core Web Vitals, Meta Tags | `/seo:audit`, `/seo:content`, `/seo:meta`, `/seo:lighthouse` |
+| security-auditor-agent | OWASP, SSH, Headers, SSL | `/security:audit`, `/security:headers`, `/security:deps`, `/security:secrets` |
+| code-reviewer-agent | Code Quality, Patterns, Architecture | Cross-stack code reviews |
 
 ## Best Practices
 

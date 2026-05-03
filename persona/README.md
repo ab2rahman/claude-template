@@ -10,7 +10,8 @@ A persona is a markdown file that instructs Claude how to behave — tone, style
 
 | Persona | Style | Best For |
 |---------|-------|----------|
-| (Add your personas here) | | |
+| [Nova](nova.md) | Precision Engineer - calm, analytical, zero fluff | Technical work, debugging, architecture |
+| [Blaze](blaze.md) | Creative Partner - energetic, encouraging, collaborative | Brainstorming, learning, pair programming |
 
 ## Creating a New Persona
 

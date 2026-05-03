@@ -64,7 +64,49 @@ Examples:
 
 | Category | Skill | Agent | Description |
 |----------|-------|-------|-------------|
-| (Add your skills here) | | | |
+| flutter | create-screen | flutter-dev-agent | Scaffold complete Flutter screen with widget, provider, route |
+| flutter | setup-provider | flutter-dev-agent | Create Riverpod provider/notifier for state management |
+| flutter | setup-navigation | flutter-dev-agent | Configure GoRouter with routes, guards, and nested navigation |
+| flutter | add-api-endpoint | flutter-dev-agent | Add Dio API endpoint with repository pattern |
+| flutter | add-form-validation | flutter-dev-agent | Add form validation with error handling |
+| kotlin | create-screen | kotlin-dev-agent | Create Jetpack Compose screen with ViewModel |
+| kotlin | setup-navigation | kotlin-dev-agent | Setup Compose Navigation with type-safe routes |
+| kotlin | setup-retrofit | kotlin-dev-agent | Configure Retrofit API interface with interceptors |
+| kotlin | setup-room | kotlin-dev-agent | Setup Room database with entity, DAO, and migration |
+| react-native | create-screen | react-native-dev-agent | Create Expo Router screen with state management |
+| react-native | setup-api | react-native-dev-agent | Setup Axios API layer with interceptors |
+| react-native | setup-navigation | react-native-dev-agent | Configure Expo Router with layouts and tabs |
+| react-native | setup-state | react-native-dev-agent | Setup Zustand store with persist middleware |
+| ios | create-screen | ios-dev-agent | Create SwiftUI screen with ViewModel |
+| ios | setup-api | ios-dev-agent | Setup URLSession API client with async/await |
+| ios | setup-navigation | ios-dev-agent | Configure NavigationStack with typed routes |
+| node | create-route | node-dev-agent | Scaffold layered route (router, controller, service, repo) |
+| node | setup-auth | node-dev-agent | Setup JWT authentication with middleware |
+| node | setup-validation | node-dev-agent | Add Zod/Joi request validation to routes |
+| node | setup-websocket | node-dev-agent | Integrate Socket.io real-time communication |
+| nextjs | create-page | nextjs-dev-agent | Create App Router page with server components |
+| nextjs | setup-api | nextjs-dev-agent | Create route handler with CRUD operations |
+| nextjs | setup-auth | nextjs-dev-agent | Setup NextAuth.js v5 with providers |
+| nextjs | setup-state | nextjs-dev-agent | Setup React Query for server state management |
+| python | create-route | python-dev-agent | Create FastAPI router with service layer |
+| python | setup-auth | python-dev-agent | Setup JWT auth with dependency injection |
+| python | setup-database | python-dev-agent | Setup SQLAlchemy model with Alembic migration |
+| database | design-schema | database-architect-agent | Design database schema with normalization |
+| database | generate-migration | database-architect-agent | Generate reversible migration file |
+| database | generate-seed | database-architect-agent | Generate seed data with faker patterns |
+| devops | deploy-app | devops-engineer-agent | Deploy application to production server |
+| devops | setup-docker | devops-engineer-agent | Create Dockerfile and docker-compose config |
+| devops | setup-ci | devops-engineer-agent | Create GitHub Actions CI/CD workflow |
+| design | analyze-image | design-analyst-agent | Extract design specs from image or Figma |
+| design | figma-workflow | design-analyst-agent | Figma design-to-code workflow |
+| design | implement-ui | design-analyst-agent | Implement UI from design specifications |
+| seo | audit-site | seo-auditor-agent | Full SEO audit with prioritized findings |
+| seo | create-content | seo-auditor-agent | Create SEO-optimized content |
+| seo | optimize-performance | seo-auditor-agent | Run Lighthouse and optimize performance |
+| security | audit-server | security-auditor-agent | Full server security audit |
+| security | check-secrets | security-auditor-agent | Scan for hardcoded secrets and credentials |
+| security | scan-dependencies | security-auditor-agent | Scan dependencies for vulnerabilities |
+| security | check-headers | security-auditor-agent | Audit HTTP security headers |
 
 ## Skill Patterns
 

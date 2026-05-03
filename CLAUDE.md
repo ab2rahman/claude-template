@@ -1,6 +1,6 @@
-# Claude Code Template System
+# Claude Code Template System — Full Stack Library
 
-Main configuration file for Claude Code. Customize this to match your workflow.
+Main configuration file with all stacks. Customize this to match your workflow.
 
 **Last Updated:** 2026-05-02
 
@@ -8,14 +8,16 @@ Main configuration file for Claude Code. Customize this to match your workflow.
 
 ## Persona System
 
-**Default Persona:** (Set your default here)
+**Default Persona:** Nova — Precision Engineer
 
-Available personas are in `persona/`. Switch using:
-```
-/persona:[name]
-```
+Switch using slash commands:
 
-See [persona/README.md](persona/README.md) for details.
+| Command | Persona | Style |
+|---------|---------|-------|
+| `/persona:nova` | Precision Engineer | Calm, analytical, zero fluff |
+| `/persona:blaze` | Creative Partner | Energetic, encouraging, collaborative |
+
+See [persona/nova.md](persona/nova.md) and [persona/blaze.md](persona/blaze.md).
 
 ---
 
@@ -97,6 +99,43 @@ See [docs/architecture.md](docs/architecture.md) for full details.
 
 ---
 
+## Available Stacks
+
+### Mobile
+
+| Stack | Commands | Skills | Agent |
+|-------|----------|--------|-------|
+| **Flutter** | test, build, clean, coverage, screen, provider, api, nav, form, widget-test, lint | create-screen, setup-provider, setup-navigation, add-api-endpoint, add-form-validation | flutter-dev-agent |
+| **Kotlin** | build, test, screen, viewmodel, api, nav, room, lint | create-screen, setup-navigation, setup-room, setup-retrofit | kotlin-dev-agent |
+| **React Native** | build, test, screen, component, api, nav, state, lint | create-screen, setup-state, setup-api, setup-navigation | react-native-dev-agent |
+| **iOS** | build, test, screen, viewmodel, api, nav, coredata | create-screen, setup-navigation, setup-api | ios-dev-agent |
+
+### Backend/Web
+
+| Stack | Commands | Skills | Agent |
+|-------|----------|--------|-------|
+| **Node.js** | build, test, route, middleware, model, api-docs, lint | create-route, setup-auth, setup-validation, setup-websocket | node-dev-agent |
+| **Next.js** | build, test, page, component, api, layout, state, lint | create-page, setup-auth, setup-api, setup-state | nextjs-dev-agent |
+| **Python** | build, test, route, model, auth, lint | create-route, setup-auth, setup-database | python-dev-agent |
+
+### Cross-cutting
+
+| Stack | Commands | Skills | Agent |
+|-------|----------|--------|-------|
+| **Database** | query, migrate, schema, seed, erd | design-schema, generate-migration, generate-seed | database-architect-agent |
+| **DevOps** | deploy, docker, ci, env, monitor | setup-docker, setup-ci, deploy-app | devops-engineer-agent |
+| **Design** | analyze, implement, figma, theme | analyze-image, implement-ui, figma-workflow | design-analyst-agent |
+| **SEO** | audit, content, meta, lighthouse | audit-site, create-content, optimize-performance | seo-auditor-agent |
+| **Security** | audit, headers, deps, secrets | audit-server, scan-dependencies, check-secrets | security-auditor-agent |
+
+### Cross-stack
+
+| Agent | Specialty |
+|-------|-----------|
+| code-reviewer-agent | Code quality, patterns, lint, architecture review |
+
+---
+
 ## Memory Bank
 
 Check `memory/` for persistent context across sessions.
@@ -139,6 +178,11 @@ cp settings.json.template settings.json  # Claude settings
 4. [docs/conversion-guide.md](docs/conversion-guide.md) — Setup guide
 5. [docs/project-structure.md](docs/project-structure.md) — Project organization
 
+**Stack guides** in `docs/guides/`:
+flutter-patterns, kotlin-patterns, react-native-patterns, ios-patterns,
+node-patterns, nextjs-patterns, python-patterns, database-patterns,
+devops-workflows, design-to-code, seo-checklist, security-checklist
+
 ---
 
 ## Response Format
@@ -153,21 +197,31 @@ Use a mix of styles based on content:
 
 ---
 
+## CLI Setup Tool
+
+```bash
+./bin/claude-setup.sh init [name]          # Initialize new project
+./bin/claude-setup.sh bundle flutter       # Install all Flutter components
+./bin/claude-setup.sh install agents/node  # Install specific component
+./bin/claude-setup.sh list                 # Show available components
+./bin/claude-setup.sh upgrade              # Check for updates
+```
+
+---
+
 ## File Organization
 
 ```
 .claude/
-├── persona/       # Personality definitions
-├── commands/      # User shortcuts (Tier 1)
-├── skills/        # Orchestrators (Tier 2)
-├── agents/        # Workers (Tier 3)
-├── docs/          # Documentation
+├── persona/       # Nova, Blaze personality definitions
+├── commands/      # 64+ slash commands organized by stack
+├── skills/        # 25+ orchestrator workflows
+├── agents/        # 13 specialized domain agents
+├── docs/          # Architecture docs + 12 stack guides
 ├── memory/        # Persistent context
 ├── plugins/       # Plugin registry
-└── bin/           # CLI tools
+└── bin/           # CLI setup tool
 ```
-
-**Rule of thumb:** Keep root clean. Everything goes in the right directory.
 
 ---
 

@@ -1,32 +1,34 @@
 # Project Directory Structure
 
-Recommended structure for organizing your actual projects on Windows.
+Recommended structure for organizing your actual projects.
 
-## Drive Location
+## Workspace Location
 
-**Use `D:/` drive** (separate from OS drive `C:/`):
+Choose a dedicated workspace directory separate from your OS drive:
 
 ```
-D:/
-└── workspace/              # or "code", "projects", your-choice
-    ├── client-a/           # First client/company
-    │   ├── project-a/
-    │   │   ├── .claude/    # Project-specific CLAUDE.md
-    │   │   ├── docs/       # Project docs (if large)
-    │   │   └── src/
-    │   └── project-b/
-    │       └── ...
-    ├── client-b/           # Second client/company
-    │   └── project-a/
-    └── personal/           # Personal projects
-        └── experiments/
+~/workspace/                # or "code", "projects", your-choice
+├── client-a/               # First client/company
+│   ├── project-a/
+│   │   ├── .claude/        # Project-specific CLAUDE.md
+│   │   ├── docs/           # Project docs (if large)
+│   │   └── src/
+│   └── project-b/
+│       └── ...
+├── client-b/               # Second client/company
+│   └── project-a/
+└── personal/               # Personal projects
+    └── experiments/
 ```
+
+**Windows:** Use `D:/workspace/` (separate from OS drive `C:/`)
+**macOS/Linux:** Use `~/workspace/` or `~/projects/`
 
 ## Why This Structure?
 
 | Benefit | Explanation |
 |---------|-------------|
-| **Separate from OS** | D: drive won't affect Windows if issues occur |
+| **Separate from OS** | Workspace won't affect OS if issues occur |
 | **Easy backup** | Backup entire workspace folder |
 | **Organized** | Clear separation between clients/projects |
 | **Scalable** | Easy to add new clients or projects |
@@ -36,15 +38,15 @@ D:/
 Update your `.env` to match:
 
 ```bash
-WORKSPACE_ROOT=D:/workspace
-CLIENT_A_ROOT=D:/workspace/client-a
-CLIENT_B_ROOT=D:/workspace/client-b
+WORKSPACE_ROOT=~/workspace
+CLIENT_A_ROOT=~/workspace/client-a
+CLIENT_B_ROOT=~/workspace/client-b
 ```
 
 ## Alternative: Single Projects Root
 
 ```
-D:/workspace/
+~/workspace/
 ├── project-a/           # Flat structure
 ├── project-b/
 └── project-c/

@@ -12,9 +12,9 @@ Documentation for the Claude Code Template System.
 | [conversion-guide.md](conversion-guide.md) | How to set up and customize the template |
 | [project-structure.md](project-structure.md) | Recommended project directory organization |
 
-## Guides (main branch)
+## Guides
 
-Stack-specific pattern guides are available on the `main` branch:
+Stack-specific pattern guides with code examples and best practices:
 
 | Guide | Stack |
 |-------|-------|
